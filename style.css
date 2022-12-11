@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Quicksand:wght@300;400;700&display=swap');
 body {
-  font-family: "Quicksand";
+  font-family: 'Quicksand', sans-serif;
   color: white;
   background-color: hsl(216, 67%, 5%);
-  padding: 0 10vw;
+  margin: 0;
 }
 
 /* HEADER HEADER HEADER */
@@ -38,42 +37,43 @@ body {
   background-color: hsl(216, 67%, 3%);
 }
 
-.footer{
+.footer {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.footer img{
+#footer .img {
   height: 60px;
   width: auto;
   margin: 24px 0;
 }
 
-.footer-socials {
+#footer .socials {
   display: flex;
   gap: 60px;
 }
-.footer-socials a {
+#footer .socials a {
   color: white;
   font-size: 40px;
 }
 
-.footer-copyright{
+#footer .copyright {
   text-align: center;
 }
 
 /* HOME HOME HOME */
 
-.home-body1 {
+#home .body1 {
   display: flex;
+  padding: 30px 10vw;
 }
 
-.home-body1 div {
+#home .body1 div {
   flex: 1;
 }
 
-.home-body1 p {
+#home .body1 p {
   padding-right: 16px;
 }
 
@@ -83,4 +83,35 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   margin: 8px;
+}
+
+#home .body2{
+  background-color: hsl(216, 67%, 12%);
+  padding: 30px 10vw;
+}
+
+#home .body2 h1{
+  margin-top: 0;
+}
+
+#home .embeds {
+  display: flex;
+  justify-content: space-between;
+}
+
+#home .embeds iframe {
+  width: 300px;
+  height: 170px;
+}
+
+#home .body3 {
+  background-color: hsl(216, 67%, 8%);
+  padding: 30px 10vw;
+  text-align: center;
+}
+
+#home .quote {
+  font-size: 1.5em;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 8px;
 }

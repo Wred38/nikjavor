@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+    <title>Nik Javor's Website</title>
+  </head>
+  <body id="home">
+    <div id="header"></div>
+    <div class="body1">
+      <div>
+        <h1>This is Nik Javor's personal website.</h1>
+        <p>
+          I'm Nik. I'm a <span class="my-age"></span> years old guy from
+          Slovenia. My passions are sports and programming.
+        </p>
+        <script>
+          getAge("10/02/2005", ".my-age");
+        </script>
+        <p>
+          I change my hobbies quite a lot so some contents on the page might
+          change with them, but the two I stated before will remain.
+        </p>
+        <p>
+          This is my personal website where you can look at my portfolio, play
+          simple games and read my blog. The site also be changing regularly
+          since I want to test different things on Frontend.
+        </p>
+      </div>
+      <div class="portret"></div>
+      <!--<img class="portret" src="./images/portret.jpg" alt="Personal portret" />-->
+    </div>
+    <div class="body2">
+      <h1>Some insights:</h1>
+      <div class="embeds">
+        <div> <!--LAST INSTAGRAM POST-->
+          <iframe
+            src="https://www.youtube-nocookie.com/embed?listType=playlist&list=UUj43E7frfhp8CQzu9Xoml6A"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+        <div> 
+          <iframe
+            src="https://www.youtube-nocookie.com/embed?listType=playlist&list=UUj43E7frfhp8CQzu9Xoml6A"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+        <div> <!--LAST BLOG POST-->
+          <iframe
+            src="https://www.youtube-nocookie.com/embed?listType=playlist&list=UUj43E7frfhp8CQzu9Xoml6A"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <div class="body3">
+      <div>
+        <p class="quote">“Heroes come and go, but legends are forever.”</p>
+        <p class="quote-author">- Kobe Bryant</p>
+      </div>
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>
