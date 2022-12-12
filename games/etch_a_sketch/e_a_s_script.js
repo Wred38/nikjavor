@@ -16,18 +16,24 @@ function createGrid(x = 16) {
     container.appendChild(rowdiv)
   }
   let gridElements = document.querySelectorAll('.gridElement')
-  gridElements.forEach(gridElement => gridElement.addEventListener('mouseover', changeClass));
-}
+  gridElements.forEach(gridElement => gridElement.addEventListener('mouseover', draw));
+};
+
+function draw(e) {
+  this.classList.remove('unhovered')
+  this.classList.add('hovered')
+};
+
+function erase(e){
+  this.classList.remove('hovered')
+  this.classList.add('unhovered')
+};
 
 createGrid()
 
-function changeClass(e) {
-  this.classList.remove('unhovered')
-  this.classList.add('hovered')
-}
 
-let button = document.querySelector('button')
-button.addEventListener('click', () => {
+let newButton = document.querySelector('.button-new')
+newButton.addEventListener('click', () => {
   while (true) {
     newGridSize = parseInt(prompt('Enter the number of squares per side for the new grid:\nMin: 1 Max: 100', '16'));
     console.log(typeof (newGridSize));
@@ -37,4 +43,21 @@ button.addEventListener('click', () => {
   }
   createGrid(newGridSize)
 })
+
+let eraseButton = document.querySelector('.button-erase')
+eraseButton.addEventListener('click', () => {
+  if (eraseButton.textContent == "ERASE: OFF"){
+    let gridElements = document.querySelectorAll('.gridElement')
+    gridElements.forEach(gridElement => gridElement.addEventListener('mouseover', erase));
+    eraseButton.textContent = "ERASE: ON"
+  }
+  else{
+    gridElements = document.querySelectorAll('.gridElement')
+    gridElements.forEach(gridElement => {
+      gridElement.addEventListener('mouseover', draw),
+      gridElement.removeEventListener('mouseover', erase)})
+    eraseButton.textContent = "ERASE: OFF"
+  }
+})
+
 
