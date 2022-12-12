@@ -39,19 +39,15 @@ body > div {
 /* FOOTER FOOTER FOOTER */
 
 #footer {
-  background-color: hsl(216, 67%, 3%);
-}
-
-.footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: hsl(216, 67%, 3%);
 }
 
-#footer .img {
-  height: 60px;
+#footer img {
+  height: 90px;
   width: auto;
-  margin: 24px 0;
 }
 
 #footer .socials {
@@ -60,7 +56,7 @@ body > div {
 }
 #footer .socials a {
   color: white;
-  font-size: 40px;
+  font-size: 46px;
 }
 
 #footer .copyright {
