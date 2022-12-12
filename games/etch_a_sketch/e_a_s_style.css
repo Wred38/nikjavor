@@ -1,0 +1,18 @@
+.container {
+  width: 320px;
+  height: 320px;
+  background-color: grey;
+  border: 2px solid black;
+}
+
+.rowdiv {
+  display: flex;
+}
+
+.unhovered {
+  background-color: pink;
+}
+
+.hovered {
+  background-color: purple;
+}

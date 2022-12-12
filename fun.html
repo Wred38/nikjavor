@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+    <title>Nik Javor's Website</title>
+  </head>
+  <body id="fun">
+    <div id="header"></div>
+    <div class="body1">
+      <h1>Have fun!</h1>
+      <h2>Play some games!</h2>
+      <div class="games">
+        <a href="./games/etch_a_sketch/etch_a_sketch.html"
+          ><img
+            class="game"
+            src="./images/game_pics/etch_a_sketch.png"
+            alt="Etch a sketch"
+        /></a>
+        <a href=""><img class="game" /></a>
+        <a href=""><img class="game" /></a>
+        <a href=""><img class="game" /></a>
+        <a href=""> <img class="game" /></a>
+      </div>
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>
